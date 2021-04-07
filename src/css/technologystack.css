@@ -1,0 +1,88 @@
+.technology-stack {
+    margin-top: 10rem;
+}
+
+.technology-stack > h3 {
+    font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.image-technology {
+    cursor: pointer;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.nodejs-image {
+    width: 330px;
+    height: 134px;
+}
+
+.mongodb-image {
+    width: 378px;
+    height: 134px
+}
+
+.android-image {
+    width: 150px;
+    height: 150px;
+}
+
+.react-image {
+    width: 200px;
+    height: 180px;
+}
+
+.image-technology:hover {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    transform: scale(1.025);
+    transition: all 0.5s;
+    outline: none;
+}
+
+.technologies-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .technologies-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .nodejs-image {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .mongodb-image {
+        width: 200px;
+        height: 100px
+    }
+    
+    .android-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .react-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .technologies-container {
+        grid-template-columns: repeat(1, 1fr); 
+        padding: 0rem 5rem;
+    }
+}

@@ -1,0 +1,24 @@
+.brief {
+    margin-top: 10rem;
+}
+
+.brief > h3 {
+    font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.image-brief-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-brief {
+
+}
+
+@media only screen and (max-width: 900px) {
+    .image-brief {
+        width: 100%;
+    }
+}

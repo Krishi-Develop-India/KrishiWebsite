@@ -1,0 +1,23 @@
+.download-links {
+    display: flex;
+    justify-content: center;
+}
+
+.button-download-links {
+    color: var(--black);
+    border: 3px solid var(--medium-black);
+}
+
+.button-download-links:hover {
+    background-color: var(--light-black);
+    color: var(--light-black);
+}
+
+@media only screen and (max-width: 630px) {
+    .download-links {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+    }
+}
