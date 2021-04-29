@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom'
 
 import Button from './Button';
 import Logo from './Logo';
@@ -6,7 +7,11 @@ import github from '../images/github.png';
 
 import '../css/navBar.css';
 
+
 function Navbar(props) {
+
+    const location = useLocation();
+
     return (  
         <div className="navbar">
             <div className="top-nav">
@@ -15,7 +20,7 @@ function Navbar(props) {
                     <div className="menu-btn-burger"></div>
                 </div>
                 <div className="navigation">
-                    <Button styleButton="button-navigation" route="/documentation">Docs</Button>
+                    <Button styleButton="button-navigation" route={location.pathname == '/' ? "/documentation" : '/'}>{location.pathname == '/' ? 'Docs' : 'Home'}</Button>
                     <Button styleButton="button-navigation" route="http://192.168.43.102/admin" external>Log in</Button>
                 </div>
             </div>

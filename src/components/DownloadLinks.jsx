@@ -5,22 +5,50 @@ import axios from 'axios';
 import '../css/download-links.css';
 import download from '../images/download.png'
 
-const handleClick = () => {
+const handleClickBrief = () => {
     console.log('downloading...');
-    const url = window.URL.createObjectURL('192.168.43.102/download/brief');
     let a = document.createElement('a');
-    a.href = url;
-    a.download = 'brief.pdf';
+    a.href = 'http://192.168.43.103/download/brief.pdf';
+    a.download = 'krishi-brief.pdf';
     a.click();
+    a.remove();
 }
+
+const handleClickProposal = () => {
+    console.log('downloading...');
+    let a = document.createElement('a');
+    a.href = 'http://192.168.43.103/download/proposal.pdf';
+    a.download = 'krishi-proposal.pdf';
+    a.click();
+    a.remove();
+}
+
+const handleClickUML = () => {
+    console.log('downloading...');
+    let a = document.createElement('a');
+    a.href = 'http://192.168.43.103/download/uml.pdf';
+    a.download = 'krishi-uml.pdf';
+    a.click();
+    a.remove();
+}
+
+const handleClickPPT = () => {
+    console.log('downloading...');
+    let a = document.createElement('a');
+    a.href = 'http://192.168.43.103/download/ppt.pptx';
+    a.download = 'krishi-ppt.pptx';
+    a.click();
+    a.remove();
+}
+
 
 function DownloadLinks(props) {
     return (
         <div className="download-links">
-            <Button source={download} styleButton="button-download-links" download>Brief</Button>
+            <Button source={download} styleButton="button-download-links" download handleClick={handleClickBrief}>Brief</Button>
             <Button source={download} styleButton="button-download-links">Proposal</Button>
-            <Button source={download} styleButton="button-download-links">UML</Button>
-            <Button source={download} styleButton="button-download-links">PPT</Button>
+            <Button source={download} styleButton="button-download-links" download handleClick={handleClickUML}>UML</Button>
+            <Button source={download} styleButton="button-download-links" download handleClick={handleClickPPT}>PPT</Button>
         </div>
     );
 }

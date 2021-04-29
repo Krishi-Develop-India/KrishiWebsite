@@ -26,6 +26,7 @@
     height: 3rem;
     width: 15rem;
     padding-left: 1rem;
+    padding-right: 1rem;
     font-family: 'Gothic A1', sans-serif;
     font-weight: bold;
     color: var(--medium-black);

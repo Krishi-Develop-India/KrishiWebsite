@@ -1,0 +1,17 @@
+.docs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.banner {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2rem;
+}
+
+.docs-container {
+    height: 100%;
+    width: 100%;
+}
