@@ -8,7 +8,7 @@ import download from '../images/download.png'
 const handleClickBrief = () => {
     console.log('downloading...');
     let a = document.createElement('a');
-    a.href = 'http://192.168.43.103/download/brief.pdf';
+    a.href = 'https://krishi-india.herokuapp.com/download/brief.pdf';
     a.download = 'krishi-brief.pdf';
     a.click();
     a.remove();
@@ -17,7 +17,7 @@ const handleClickBrief = () => {
 const handleClickProposal = () => {
     console.log('downloading...');
     let a = document.createElement('a');
-    a.href = 'http://192.168.43.103/download/proposal.pdf';
+    a.href = 'https://krishi-india.herokuapp.com/download/proposal.pdf';
     a.download = 'krishi-proposal.pdf';
     a.click();
     a.remove();
@@ -26,7 +26,7 @@ const handleClickProposal = () => {
 const handleClickUML = () => {
     console.log('downloading...');
     let a = document.createElement('a');
-    a.href = 'http://192.168.43.103/download/uml.pdf';
+    a.href = 'https://krishi-india.herokuapp.com/download/uml.pdf';
     a.download = 'krishi-uml.pdf';
     a.click();
     a.remove();
@@ -35,7 +35,7 @@ const handleClickUML = () => {
 const handleClickPPT = () => {
     console.log('downloading...');
     let a = document.createElement('a');
-    a.href = 'http://192.168.43.103/download/ppt.pptx';
+    a.href = 'https://krishi-india.herokuapp.com/download/ppt.pptx';
     a.download = 'krishi-ppt.pptx';
     a.click();
     a.remove();

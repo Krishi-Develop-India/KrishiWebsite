@@ -21,7 +21,7 @@ function Navbar(props) {
                 </div>
                 <div className="navigation">
                     <Button styleButton="button-navigation" route={location.pathname == '/' ? "/documentation" : '/'}>{location.pathname == '/' ? 'Docs' : 'Home'}</Button>
-                    <Button styleButton="button-navigation" route="http://192.168.43.102/admin" external>Log in</Button>
+                    <Button styleButton="button-navigation" route="https://krishi-india.herokuapp.com/admin" external>Log in</Button>
                 </div>
             </div>
             <div className="para">
