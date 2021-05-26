@@ -41,12 +41,20 @@ const handleClickPPT = () => {
     a.remove();
 }
 
+const handleClickProposal = () => {
+    console.log('downloading...');
+    let a = document.createElement('a');
+    a.href = 'https://krishi-india.herokuapp.com/download/proposal.pptx';
+    a.download = 'krishi-proposal.pdf';
+    a.click();
+    a.remove();
+}
 
 function DownloadLinks(props) {
     return (
         <div className="download-links">
             <Button source={download} styleButton="button-download-links" download handleClick={handleClickBrief}>Brief</Button>
-            <Button source={download} styleButton="button-download-links">Proposal</Button>
+            <Button source={download} styleButton="button-download-links" download handleClick={handleClickProposal}>Proposal</Button>
             <Button source={download} styleButton="button-download-links" download handleClick={handleClickUML}>UML</Button>
             <Button source={download} styleButton="button-download-links" download handleClick={handleClickPPT}>PPT</Button>
         </div>
